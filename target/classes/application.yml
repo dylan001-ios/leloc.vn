@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: socialNetworkApp
+  datasource:
+    url: jdbc:mysql://localhost:3306/leloc_gmailnew
+    username: root
+
+    password: leloc123
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  jwt:
+    secret: Y2X2QmxJX09tV5NmdQRWbJ0Amk2pv5Kgd7XqfVKlD67RwrJkwqprFDmNlzfgeu4z
+    expiration: 3600000 # Thời gian tồn tại token (ms), ở đây là 1 giờ
+
+
+server:
+  port: 8888
